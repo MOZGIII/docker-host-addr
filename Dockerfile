@@ -1,2 +1,2 @@
 FROM alpine:latest
-CMD ip route | grep '^default' | awk '{ print $3 }'
+CMD ip route | grep '^default' | awk '{ print $3 ; exit }'
